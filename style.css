@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.head {
+    text-align: center;
+    font-family: 'Roboto';
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 7vmin;
+    font-style: normal;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.navbar {
+    /* Black with 70% opacity */
+    background-color: rgba(94, 86, 86, 0.7);
+    border-radius: 25px;
+    margin: 0px;
+}
+
+nav {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 12vmin;
+    font-family: 'Roboto';
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    /* Smooth, rounded edges */
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+/* Hover effect */
+nav ul li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    /* Subtle zoom */
+}
+
+/* Active (clicked) effect */
+nav ul li:active {
+    transform: scale(0.98);
+}
+
+.logo {
+    height: 4vh;
+    width: 4vw;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.1);
+    /* Subtle transparency */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    /* Smooth, rounded edges */
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    /* Frosted glass effect */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    /* Frosted glass effect */
+}
+
+/* Hover effect */
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    /* Subtle zoom */
+}
+
+/* Active (clicked) effect */
+button:active {
+    transform: scale(0.98);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    width: 50vw;
+    height: 50vh;
+    margin-left: 25vw;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+form label {
+    font-family: 'Roboto' sans-serif;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    color: black;
+}
+
+form input {
+    font-family: 'Roboto' sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+font input::placeholder {
+    font-family: 'Roboto' sans-serif;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: rgb(50, 50, 50);
+}
