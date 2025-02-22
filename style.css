@@ -101,6 +101,7 @@ button:active {
 
 .login {
     display: flex;
+    flex-direction: column; /* Stack children vertically */
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.5);
@@ -159,4 +160,12 @@ form button {
 
 form button:hover {
     background: rgb(50, 50, 50);
+}
+
+.insidelogin {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px; /* Adds space between the title and inputs */
 }
