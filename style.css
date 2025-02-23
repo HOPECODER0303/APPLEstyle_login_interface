@@ -2,8 +2,8 @@
 
 *{
     /* useful as, margin 0 and padding 0 removes any default margin and padding added by the browser, box-sizing border box ensures that the total size of margin and padding is included in the element's total height and width preventing any unexpected layout shifts */
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 
