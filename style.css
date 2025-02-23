@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    /* useful as, margin 0 and padding 0 removes any default margin and padding added by the browser, box-sizing border box ensures that the total size of margin and padding is included in the element's total height and width preventing any unexpected layout shifts */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .head {
     text-align: center;
     font-family: 'Roboto';
     font-optical-sizing: auto;
     font-weight: 300;
-    font-size: 7vmin;
+    font-size: clamp(16px, 7vmin, 48px);/*16px as the minimum size (for very small screens).
+    7vmin as the preferred size.
+    48px as the maximum size (prevents excessive scaling). */
     font-style: normal;
+    margin-top: clamp(16px, 7vmin , 48px);
 }
 
 .video {
@@ -100,6 +110,7 @@ button:active {
 }
 
 .login {
+    margin-top: clamp(16px, 7vmin , 48px);
     display: flex;
     flex-direction: column; /* Stack children vertically */
     justify-content: center;
@@ -111,6 +122,14 @@ button:active {
     border-radius: 25px;
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    /* styling the word "LOGIN" inside the login box below */
+    font-size: clamp(16px, 5vmin, 48px);
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px; /* Adds space between the title and inputs*/
+
 }
 
 form {
@@ -160,12 +179,4 @@ form button {
 
 form button:hover {
     background: rgb(50, 50, 50);
-}
-
-.insidelogin {
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px; /* Adds space between the title and inputs */
 }
